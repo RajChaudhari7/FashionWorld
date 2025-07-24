@@ -14,6 +14,10 @@ const port = process.env.PORT || 4000
 connectDB()
 connectCloudinary()
 
+// allow multiple origins
+
+const allowedOrigins = ['http://localhost:5176', 'https://fashionworld-admin.onrender.com']
+
 
 //middlewares
 app.use(express.json())
